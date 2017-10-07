@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <div align="center">
+        <input type="button" value="停止计时" id="mytime1" onclick="timeUp()"/>
+    </div>
+    付费：<input type="button" value="付费" id="pay" onclick="Paying()"/>
+
+
+    <style>
+        #mytime {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function two_char(n) {
+            return n >= 10 ? n : "0" + n;
+        }
+            var sec=0;
+            var int=self.setInterval("clock()",1000)
+            function clock() {
+                sec++;
+                var date = new Date(0, 0)
+                date.setSeconds(sec);
+                var h = date.getHours(), m = date.getMinutes(), s = date.getSeconds();
+                document.getElementById("mytime").innerText = two_char(h) + ":" + two_char(m) + ":" + two_char(s);
+            }
+
+        function timeUp() {
+            int=window.clearInterval(int);
+            console.log(document.getElementById("mytime").innerText);
+        }
+
+
+        function Paying(){
+                var con;
+                con=confirm("nihao");
+                if(con==true){
+                    document.write("asasasassa");
+                }
+                else{
+                    alert("asdsadas");
+                }
+
+        }
+
+    </script>
+    <h1 id="mytime">00:00:00</h1>
+</head>
+
+
+
+</body>
+</html>

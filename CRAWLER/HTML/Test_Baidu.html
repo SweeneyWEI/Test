@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度三下，你就知道</title>
+</head>
+<body>
+<script>
+    function check() {
+        var i = 1;
+        var j = 1;
+        var s = 0;
+        while (true) {
+            if (i < 10) {
+                for (j = 1; j <= i; j++) {
+                    s = i * j;
+                    console.log(j+"*"+i+"="+s);
+
+                }
+                i++;
+                console.log("");
+            }
+//            var va = document.getElementById("baidu").value;
+//            console.log(va);
+        }
+    }
+</script>
+
+<div align="center" style="height: 0px">
+    <input type="image" src="https://www.baidu.com/img/bd_logo1.png" height="130" width="270" id="baidu2"/><br>
+    <input type="text" id="baidu" style=" height: 36px;width: 540px"  autofocus="autofocus"/>
+    <input type="button" id="baidu1" value="百度一下"  style="position:absolute;color:white;background:dodgerblue;
+    height: 40px;width: 100px" onclick="check()"/>
+</div>
+
+
+
+
+    <div style="float: right;height: 64px">
+ <span>
+<a href="http://www.chinanews.com/"  >新闻 </a>&nbsp;
+<a href="https://www.hao123.com/" >hao123 </a>&nbsp;
+<a href="http://map.baidu.com/">地图 </a>&nbsp;
+<a href="http://v.baidu.com/" >视频 </a>&nbsp;
+<a href="https://tieba.baidu.com/index.html" >贴吧 </a>&nbsp;
+<a href="http://v.baidu.com/" >视频 </a>&nbsp;
+</span>
+    </div>
+<!--&lt;!&ndash;<ul>-->
+    <!--<li class="first"><a class="current">Home</a></li>-->
+    <!--<li><a href="about_us.html">About Us</a></li>-->
+    <!--<li><a href="projects.html">Projects</a></li>-->
+    <!--<li><a href="services.html">Services</a></li>-->
+    <!--<li><a href="support.html">Support</a></li>-->
+    <!--<li><a href="contact_us.html">Contact Us</a></li>-->
+</ul>-->
+</body>
+</html>

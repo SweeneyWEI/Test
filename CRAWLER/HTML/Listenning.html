@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    window.onbeforeunload = onbeforeunload_handler;
+    window.onunload = onunload_handler;
+    function onbeforeunload_handler(){
+//        var warning="";
+        return window.location.href='clocker.html';
+
+    }
+    function onunload_handler(){
+        var warning="谢谢光临";
+        alert(warning);
+    }
+</script>
+</body>
+</html>
